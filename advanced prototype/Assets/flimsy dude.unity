@@ -784,20 +784,20 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
     spring: 0
-    damper: 0
+    damper: 20
   m_LowTwistLimit:
-    limit: -130.1861
+    limit: 68.59469
     bounciness: 0
     contactDistance: 0
   m_HighTwistLimit:
-    limit: -130.1861
+    limit: 130.1861
     bounciness: 0
     contactDistance: 0
   m_SwingLimitSpring:
     spring: 0
-    damper: 20
+    damper: 0
   m_Swing1Limit:
-    limit: 66.6064
+    limit: 40.94919
     bounciness: 0
     contactDistance: 0
   m_Swing2Limit:
