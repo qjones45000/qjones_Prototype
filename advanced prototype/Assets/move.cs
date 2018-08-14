@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class move : MonoBehaviour {
 
-    public float thrust;
-    public Rigidbody rb;
+    public float speed;
+
+    private Rigidbody rb;
 
     void Start()
     {
@@ -14,6 +15,11 @@ public class move : MonoBehaviour {
 
     void FixedUpdate()
     {
-        rb.AddForce(0, 0, thrust, ForceMode.Impulse);
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
+
+        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+
+        rb.AddForce(movement * speed);
     }
 }
