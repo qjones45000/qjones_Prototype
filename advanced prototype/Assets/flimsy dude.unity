@@ -326,7 +326,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c4e5dac55ed42d4a904c8cad33dff86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 17.81
+  thrust: 0
+  rb: {fileID: 0}
 --- !u!1 &322462754 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100036, guid: c24bd509821d88446a5d7921efc7a21b, type: 3}
@@ -676,6 +677,18 @@ Prefab:
     - target: {fileID: 400006, guid: c24bd509821d88446a5d7921efc7a21b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400036, guid: c24bd509821d88446a5d7921efc7a21b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.016
+      objectReference: {fileID: 0}
+    - target: {fileID: 400036, guid: c24bd509821d88446a5d7921efc7a21b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.935
+      objectReference: {fileID: 0}
+    - target: {fileID: 400036, guid: c24bd509821d88446a5d7921efc7a21b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.101
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c24bd509821d88446a5d7921efc7a21b, type: 3}
@@ -1073,7 +1086,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c4e5dac55ed42d4a904c8cad33dff86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  thrust: 0
+  rb: {fileID: 0}
 --- !u!1 &1332818350 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100008, guid: c24bd509821d88446a5d7921efc7a21b, type: 3}
