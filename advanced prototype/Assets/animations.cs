@@ -19,5 +19,10 @@ public class animations : MonoBehaviour {
         {
             anim.Play("fight");
         }
+
+        if (Input.GetKeyDown("k"))
+        {
+            anim.Play("kick");
+        }
 	}
 }
