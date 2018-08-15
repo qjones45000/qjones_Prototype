@@ -311,7 +311,7 @@ ConstantForce:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 175404492}
   m_Enabled: 1
-  m_Force: {x: 0, y: 179.91, z: 0}
+  m_Force: {x: 0, y: 179.63, z: 0}
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
@@ -1047,14 +1047,14 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 683833803}
   serializedVersion: 2
-  m_Mass: 2
+  m_Mass: 1.83
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &879724155
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,14 +1128,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 879724155}
-  m_LocalRotation: {x: -0.00000001826211, y: -0.000000044598167, z: 0.0000000030704563,
-    w: 1}
-  m_LocalPosition: {x: -1.6746657, y: 3.0599997, z: -5.3103895}
+  m_LocalRotation: {x: 0.06685543, y: -0.00000004429311, z: 0.000000006045217, w: 0.9977627}
+  m_LocalPosition: {x: 0.33, y: 4.25, z: -5.3103895}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1206645535}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 7.6670003, y: 0, z: 0}
 --- !u!1 &1021102927 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100024, guid: c24bd509821d88446a5d7921efc7a21b, type: 3}
