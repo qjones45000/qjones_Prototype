@@ -24,5 +24,10 @@ public class animations : MonoBehaviour {
         {
             anim.Play("kick");
         }
+
+		if (Input.GetKeyDown("h"))
+			{
+			anim.Play("LEFT ARM");
+			}
 	}
 }

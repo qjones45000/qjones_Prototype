@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour {
     private void Update()
     {
         transform.LookAt(target);
-        transform.Translate(Vector3.forward * 5 * Time.deltaTime);
+		if (Vector3.Distance (transform.position, target.position) > 0.5f) { 
+			transform.Translate (Vector3.forward * 5 * Time.deltaTime);
+		}
     }
   }
