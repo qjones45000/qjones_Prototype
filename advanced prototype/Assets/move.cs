@@ -8,6 +8,11 @@ public class move : MonoBehaviour {
 
     private Rigidbody rb;
 
+    public bool PlayerOne;
+
+    float moveHorizontal;
+    float moveVertical;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -15,8 +20,16 @@ public class move : MonoBehaviour {
 
     void FixedUpdate()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        if (PlayerOne == true)
+        {
+            moveHorizontal = Input.GetAxis("Horizontal p1");
+            moveVertical = Input.GetAxis("Vertical p1");
+        }
+        else
+        {
+            moveHorizontal = Input.GetAxis("Horizontal p2");
+            moveVertical = Input.GetAxis("Vertical p2");
+        }
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
