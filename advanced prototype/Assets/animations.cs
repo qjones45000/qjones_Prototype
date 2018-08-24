@@ -5,7 +5,9 @@ using UnityEngine;
 public class animations : MonoBehaviour {
 
     public Animator anim;
-
+    public bool fight; 
+    
+    
 	// Use this for initialization
 	void Start () {
 
@@ -15,19 +17,43 @@ public class animations : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown("j"))
-        {
-            anim.Play("fight");
-        }
 
-        if (Input.GetKeyDown("k"))
+        if (fight == true)
         {
-            anim.Play("kick");
-        }
+            if (Input.GetKeyDown("j"))
+            {
+                anim.Play("fight");
+            }
 
-		if (Input.GetKeyDown("h"))
-			{
-			anim.Play("LEFT ARM");
-			}
+            if (Input.GetKeyDown("k"))
+            {
+                anim.Play("kick");
+            }
+
+            if (Input.GetKeyDown("h"))
+            {
+                anim.Play("LEFT ARM");
+            }
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Keypad1))
+            {
+                anim.Play("fight");
+            }
+
+            if (Input.GetKeyDown(KeyCode.Keypad2))
+            {
+                anim.Play("kick");
+            }
+
+            if (Input.GetKeyDown(KeyCode.Keypad3))
+            {
+                anim.Play("LEFT ARM");
+            }
+
+
+        }
+     
 	}
 }
