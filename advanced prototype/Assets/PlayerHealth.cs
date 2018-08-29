@@ -1,30 +1,50 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour {
 
-    public int StartingHealth = 100;
-    public int CurrentHealth;
-    public Slider HealthSlider; 
+	public Image healthbar; 
+	public float Max_Health = 100f; 
+	public float currenthealth = 0f; 
+	public bool alive = true; 
 
 
-	// Use this for initialization
-	void Start () {
-
-        CurrentHealth = StartingHealth; 
-		 
-	}
+	void start ()
+	{
+		alive = true; 
+		currenthealth = Max_Health;
+		sethealthbar (); 
 	
-	// Update is called once per frame
-	void Update () {
-        
 	}
 
-  public void TakeDamage(int amount)
-    {
-        CurrentHealth -= amount;
-        HealthSlider.value = CurrentHealth;
-    }
+	void DoDamage()
+	{
+		TakeDamage (10f); 
+
+	}
+
+	public void TakeDamage (float amount)
+	{
+		if (!alive) 
+		{
+			return; 
+		}
+
+		if (currenthealth <= 0) 
+		{
+			currenthealth = 0;
+			alive = false; 
+			//gameObject.SetActive (false); 
+		}
+		currenthealth -= amount;
+		sethealthbar (); 
+	}
+
+	public void sethealthbar()
+	{
+		float my_health = currenthealth / Max_Health;
+		healthbar.transform.localScale = new Vector3 (Mathf.Clamp (my_health, 0f, 1f), healthbar.transform.localScale.y, healthbar.transform.localScale.z);
+	}
+
 }
