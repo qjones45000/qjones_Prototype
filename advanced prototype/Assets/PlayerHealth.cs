@@ -35,7 +35,7 @@ public class PlayerHealth : MonoBehaviour {
 		{
 			currenthealth = 0;
 			alive = false; 
-			//gameObject.SetActive (false); 
+			gameObject.SetActive (false); 
 		}
 		currenthealth -= amount;
 		sethealthbar (); 
