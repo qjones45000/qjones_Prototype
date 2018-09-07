@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class move : MonoBehaviour {
 
-	public static float Max_Health = 100f; 
 
-	public  float health = Max_Health; 
 
-	public move oponent; 
+	
 
     public float speed;
 
@@ -19,11 +17,7 @@ public class move : MonoBehaviour {
     float moveHorizontal;
     float moveVertical;
 
-	public float healthpercent {
-		get { 
-			return health / Max_Health; 
-		}
-	}
+
 
 	public Rigidbody rigid {
 		get { 

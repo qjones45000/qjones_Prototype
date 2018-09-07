@@ -4,33 +4,31 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour {
 
-	public float currenthealth {get; set;}
-	public float Max_health {get; set;} 
+    public float currenthealth = 0;
+    public float Max_health = 100f;
+
 
 	public Slider healthbar;
 
 
 
-	void start ()
+	void Start ()
 	{
-		Max_health = 20f;
-
 		currenthealth = Max_health;
-
-		healthbar.value = calc_health ();
 	}
 
-		void update()
-		{
-		if (Input.GetKeyDown (KeyCode.X)) 
-		{
-			dealDamage (6);
-		}
+	void Update()
+	{
+	    if (Input.GetKeyDown ("p"))
+	    {
+		    dealDamage (6);
+	    }
+
+        healthbar.value = currenthealth;
+    }
 
 
-
-		}
-	float calc_health()
+    float calc_health()
 	{
 		return currenthealth / Max_health;
 	}
@@ -38,7 +36,7 @@ public class Health : MonoBehaviour {
 	
 
 
-	void dealDamage (float damage)
+	public void dealDamage (float damage)
 	{
 		currenthealth -= damage;
 
@@ -53,6 +51,5 @@ public class Health : MonoBehaviour {
 			currenthealth = 0;
 			Debug.Log("you died");
 		}
-
 
 }
