@@ -17,15 +17,7 @@ public class Health : MonoBehaviour {
 		currenthealth = Max_health;
 	}
 
-	void Update()
-	{
-	    if (Input.GetKeyDown ("p"))
-	    {
-		    dealDamage (6);
-	    }
 
-        healthbar.value = currenthealth;
-    }
 
 
     float calc_health()
@@ -51,5 +43,19 @@ public class Health : MonoBehaviour {
 			currenthealth = 0;
 			Debug.Log("you died");
 		}
+
+     void OnCollisionEnter(Collision collision)
+    {
+
+
+       if (collision.gameObject.tag == "Hand")
+        {
+            dealDamage(6);
+            Debug.Log("you have been hit");
+            
+           
+        }
+        healthbar.value = currenthealth;
+    }
 
 }
