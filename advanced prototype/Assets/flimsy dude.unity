@@ -493,7 +493,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 175171875}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 261, y: 155, z: 0}
+  m_LocalPosition: {x: 195, y: 155, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1002481900}
@@ -1874,7 +1874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currenthealth: 0
   Max_health: 100
-  healthbar: {fileID: 1002481901}
+  healthbar: {fileID: 0}
 --- !u!136 &699177096
 CapsuleCollider:
   m_ObjectHideFlags: 0

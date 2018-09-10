@@ -7,6 +7,8 @@ public class Health : MonoBehaviour {
     public float currenthealth = 0;
     public float Max_health = 100f;
 
+    public bool damage;
+
 
 	public Slider healthbar;
 
@@ -46,17 +48,28 @@ public class Health : MonoBehaviour {
 
      void OnCollisionEnter(Collision collision)
     {
-
-
-       if (collision.gameObject.tag == "Hand")
+        if (damage == true)
         {
-            dealDamage(6);
-            Debug.Log("you have been hit");
-            calc_health();
-            
-           
+            if (collision.gameObject.tag == "Hand")
+            {
+                dealDamage(6);
+                Debug.Log("you have been hit");
+                calc_health();
+
+
+            }
+            else
+            {
+                if (collision.gameObject.tag == "fist")
+                {
+                    dealDamage(6);
+                    Debug.Log("you just got fucked");
+                    calc_health();
+                }
+            }
+            healthbar.value = currenthealth;
         }
-        healthbar.value = currenthealth;
+        
     }
 
 }
