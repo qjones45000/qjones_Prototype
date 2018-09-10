@@ -5,37 +5,37 @@ using UnityEngine.UI;
 
 public class Player2Health : MonoBehaviour {
 
-    public float currenthealth = 0;
-    public float Max_health = 100f;
+    public float currentHealth = 0;
+    public float max_health = 100f;
 
 
 
 
-    public Slider healthbar;
+    public Slider dudehealth;
 
 
 
     void Start()
     {
-        currenthealth = Max_health;
+        currentHealth = max_health;
     }
 
 
 
 
-    float calc_health()
+    float Calc_Health()
     {
-        return currenthealth / Max_health;
+        return currentHealth / max_health;
     }
 
 
 
 
-    public void dealDamage(float damage)
+    public void feelDamage(float damage)
     {
-        currenthealth -= damage;
+        currentHealth -= damage;
 
-        if (currenthealth <= 0)
+        if (currentHealth <= 0)
 
             Die();
 
@@ -43,7 +43,7 @@ public class Player2Health : MonoBehaviour {
 
     void Die()
     {
-        currenthealth = 0;
+        currentHealth = 0;
         Debug.Log("player 2 died");
     }
 
@@ -53,14 +53,14 @@ public class Player2Health : MonoBehaviour {
 
         if (collision.gameObject.tag == "fist")
         {
-            dealDamage(6);
+            feelDamage(6);
             Debug.Log("you got fucked");
-            calc_health();
+            Calc_Health();
 
 
         }
 
-        healthbar.value = currenthealth;
+        dudehealth.value = currentHealth;
     }
 
 }
