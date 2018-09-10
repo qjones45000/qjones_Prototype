@@ -52,6 +52,7 @@ public class Health : MonoBehaviour {
         {
             dealDamage(6);
             Debug.Log("you have been hit");
+            calc_health();
             
            
         }
