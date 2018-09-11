@@ -41,7 +41,7 @@ public class Health : MonoBehaviour {
 
 
 
-	public void dealDamage (float damage)
+	public void Damagedelt (float damage)
 	{
         
 
@@ -55,7 +55,7 @@ public class Health : MonoBehaviour {
 		
 	}
 
-    public void DealDamage2 (float Damage2)
+    public void Dealdamagee2 (float Damage2)
     {
         Player2Health -= Damage2;
 
@@ -77,7 +77,7 @@ public class Health : MonoBehaviour {
         {
             if (collision.gameObject.tag == "Hand")
             {
-                dealDamage(6);
+                Damagedelt(6);
                 Debug.Log("you have been hit");
                 calc_health();
             }
@@ -89,7 +89,7 @@ public class Health : MonoBehaviour {
         {
             if (collision.gameObject.tag == "fist")
             {
-                DealDamage2(6);
+                Dealdamagee2(6);
                 Debug.Log("you got fucked");
                 Calc_Health2();
             }
