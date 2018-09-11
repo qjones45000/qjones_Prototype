@@ -9,8 +9,9 @@ public class projectile : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+       
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -20,6 +21,8 @@ public class projectile : MonoBehaviour {
 
             Pmove=Instantiate(power, powerform.position, powerform.rotation)as Rigidbody;
             Pmove.AddForce(powerform.forward * 5000);
+
+            
         }
 
 		
