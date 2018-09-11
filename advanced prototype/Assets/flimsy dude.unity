@@ -1991,7 +1991,7 @@ MonoBehaviour:
   Player2Health: 0
   Player2MaxHP: 100
   healthbar: {fileID: 1002481901}
-  player2health: {fileID: 0}
+  player2health: {fileID: 1649150494}
 --- !u!136 &699177096
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2821,11 +2821,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currenthealth: 0
   Max_health: 100
-  playerHealth: 0
+  playerHealth: 1
   Player2Health: 0
   Player2MaxHP: 100
   healthbar: {fileID: 1002481901}
-  player2health: {fileID: 0}
+  player2health: {fileID: 1649150494}
 --- !u!1 &1140511326 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: c24bd509821d88446a5d7921efc7a21b, type: 3}
@@ -3642,7 +3642,7 @@ MonoBehaviour:
   playerHealth: 0
   Player2Health: 0
   Player2MaxHP: 100
-  healthbar: {fileID: 0}
+  healthbar: {fileID: 1002481901}
   player2health: {fileID: 1649150494}
 --- !u!65 &1813470303
 BoxCollider:
