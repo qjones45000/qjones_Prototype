@@ -34,6 +34,10 @@ public class animations : MonoBehaviour {
             {
                 anim.Play("LEFT ARM");
             }
+            if (Input.GetKeyDown("l"))
+            {
+                anim.Play("power");
+            }
         }
         else
         {
