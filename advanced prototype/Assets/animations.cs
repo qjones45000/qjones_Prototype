@@ -55,6 +55,10 @@ public class animations : MonoBehaviour {
             {
                 anim.Play("LEFT ARM");
             }
+            if (Input.GetKeyDown(KeyCode.Keypad5))
+            {
+                anim.Play("power");
+            }
 
 
         }
