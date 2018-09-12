@@ -25,10 +25,10 @@ GameObject:
   - component: {fileID: 135256968706154918}
   - component: {fileID: 33422135036504070}
   - component: {fileID: 23615836405930970}
-  - component: {fileID: 114791437353822226}
+  - component: {fileID: 114319345113034428}
   m_Layer: 0
   m_Name: enemy powers
-  m_TagString: Hand
+  m_TagString: fist
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +102,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114791437353822226
+--- !u!114 &114319345113034428
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1175896442564674}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: bfcba1f77cf7ac54db5e81b0f09c452d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!135 &135256968706154918

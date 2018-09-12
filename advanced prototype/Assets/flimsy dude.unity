@@ -577,7 +577,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 175171875}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 318, y: 123.5, z: 0}
+  m_LocalPosition: {x: 408, y: 163, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1002481900}
@@ -1433,6 +1433,35 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &568379160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 568379161}
+  m_Layer: 0
+  m_Name: dude position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &568379161
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 568379160}
+  m_LocalRotation: {x: -0.000000011539858, y: 0.00000022762066, z: -0.000007810835,
+    w: 1}
+  m_LocalPosition: {x: -0.09998795, y: 0.78695405, z: 0.3190004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1813470304}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &604959465 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100026, guid: c24bd509821d88446a5d7921efc7a21b, type: 3}
@@ -2019,24 +2048,10 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &699177095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 699177093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 265a82539af273b4c965c7ad6e4151ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currenthealth: 0
-  Max_health: 100
-  playerHealth: 1
-  Player2Health: 0
-  Player2MaxHP: 100
-  healthbar: {fileID: 1002481901}
-  player2health: {fileID: 1649150494}
+--- !u!4 &699177095 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400006, guid: c24bd509821d88446a5d7921efc7a21b, type: 3}
+  m_PrefabInternal: {fileID: 659072079}
 --- !u!136 &699177096
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2050,6 +2065,41 @@ CapsuleCollider:
   m_Height: 1.94
   m_Direction: 1
   m_Center: {x: 0, y: 0.54, z: -0.06}
+--- !u!114 &699177097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 699177093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18e4b204da1eff443a16b806375e6d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  power: {fileID: 54610467497775834, guid: e749e350c90016e4fbbbe2c1445c3c79, type: 2}
+  powerform: {fileID: 568379161}
+  powers: 0
+  enemyPower: {fileID: 54895724854522286, guid: 9f117ab9a7a696b448f9746b09f36e96,
+    type: 2}
+  EnemyForm: {fileID: 2101691441}
+--- !u!114 &699177098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 699177093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3da6a82de92b924fab49aada1c3ae16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currenthealth: 0
+  Max_health: 100
+  playerHealth: 1
+  Player2Health: 0
+  Player2MaxHP: 100
+  healthbar: {fileID: 1002481901}
+  player2health: {fileID: 1649150494}
 --- !u!1 &724663231 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100054, guid: c24bd509821d88446a5d7921efc7a21b, type: 3}
@@ -2682,7 +2732,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1002481899}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 272, y: -272, z: 0}
+  m_LocalPosition: {x: 301, y: -132, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 913602296}
@@ -2692,7 +2742,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 272, y: -272}
+  m_AnchoredPosition: {x: 301, y: -132}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1002481901
@@ -2868,13 +2918,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 265a82539af273b4c965c7ad6e4151ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currenthealth: 0
-  Max_health: 100
-  playerHealth: 1
-  Player2Health: 0
-  Player2MaxHP: 100
-  healthbar: {fileID: 1002481901}
-  player2health: {fileID: 1649150494}
 --- !u!1 &1140511326 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: c24bd509821d88446a5d7921efc7a21b, type: 3}
@@ -2935,13 +2978,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 265a82539af273b4c965c7ad6e4151ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currenthealth: 0
-  Max_health: 100
-  playerHealth: 0
-  Player2Health: 0
-  Player2MaxHP: 100
-  healthbar: {fileID: 1002481901}
-  player2health: {fileID: 1649150494}
 --- !u!1 &1166390641
 GameObject:
   m_ObjectHideFlags: 0
@@ -3691,7 +3727,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1649150493}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -266, y: -267, z: 0}
+  m_LocalPosition: {x: -301, y: -125, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1902114032}
@@ -3701,7 +3737,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -266, y: -267}
+  m_AnchoredPosition: {x: -301, y: -125}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1671849858 stripped
@@ -3785,16 +3821,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1813470300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 265a82539af273b4c965c7ad6e4151ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 18e4b204da1eff443a16b806375e6d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currenthealth: 0
-  Max_health: 100
-  playerHealth: 0
-  Player2Health: 0
-  Player2MaxHP: 100
-  healthbar: {fileID: 1002481901}
-  player2health: {fileID: 1649150494}
+  power: {fileID: 54610467497775834, guid: e749e350c90016e4fbbbe2c1445c3c79, type: 2}
+  powerform: {fileID: 568379161}
+  powers: 1
+  enemyPower: {fileID: 54895724854522286, guid: 9f117ab9a7a696b448f9746b09f36e96,
+    type: 2}
+  EnemyForm: {fileID: 2101691441}
 --- !u!65 &1813470303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3819,11 +3854,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1813470300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6012d55cbbcfd14b99658a9fd460ff5, type: 3}
+  m_Script: {fileID: 11500000, guid: c3da6a82de92b924fab49aada1c3ae16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: {fileID: 54610467497775834, guid: bed037ef6debf6b47b76ca0b34afd69d, type: 2}
-  powerform: {fileID: 488768562}
+  currenthealth: 0
+  Max_health: 100
+  playerHealth: 0
+  Player2Health: 0
+  Player2MaxHP: 100
+  healthbar: {fileID: 1002481901}
+  player2health: {fileID: 1649150494}
 --- !u!1001 &1847233939
 Prefab:
   m_ObjectHideFlags: 0
@@ -4654,6 +4694,35 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &2101691440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2101691441}
+  m_Layer: 0
+  m_Name: enemy position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2101691441
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2101691440}
+  m_LocalRotation: {x: -0.000000011539858, y: 0.00000022762066, z: -0.000007810835,
+    w: 1}
+  m_LocalPosition: {x: -0.09, y: 1.19, z: 1.08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 699177095}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2106744516 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100014, guid: c24bd509821d88446a5d7921efc7a21b, type: 3}
