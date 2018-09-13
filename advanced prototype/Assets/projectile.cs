@@ -28,7 +28,7 @@ public class projectile : MonoBehaviour {
 
                 Pmove = Instantiate(power, powerform.position, powerform.rotation) as Rigidbody;
                 Pmove.AddForce(powerform.forward * 5000);
-
+                
 
             }
             else

@@ -13,7 +13,7 @@ public class Respawn : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
 
-        GetComponent<move>();
+   
        
 
            Player.transform.position = spawnpoint.transform.position;
