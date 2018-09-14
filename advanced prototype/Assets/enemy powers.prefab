@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 33422135036504070}
   - component: {fileID: 23615836405930970}
   - component: {fileID: 114319345113034428}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy powers
   m_TagString: fist
   m_Icon: {fileID: 0}

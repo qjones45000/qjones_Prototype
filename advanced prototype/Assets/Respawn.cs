@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour {
 
-    public GameObject Player;
-    public Transform spawnpoint;
-   
+	[SerializeField] private Transform dude;
+	[SerializeField] private Transform spawnpoint;
+	 
 
    
 
@@ -16,7 +16,7 @@ public class Respawn : MonoBehaviour {
    
        
 
-           Player.transform.position = spawnpoint.transform.position;
+           dude.transform.position = spawnpoint.transform.position;
             Debug.Log("collided");
         
         

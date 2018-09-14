@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 33726784924568390}
   - component: {fileID: 23331558535735824}
   - component: {fileID: 114526259398652346}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particle System
   m_TagString: Hand
   m_Icon: {fileID: 0}
