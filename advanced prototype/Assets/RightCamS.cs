@@ -2,22 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CamChange : MonoBehaviour {
+public class RightCamS : MonoBehaviour {
 
     public Camera camleft;
     public Camera camright;
 
 
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
 
-        camleft.enabled = false;
-        camright.enabled = true;
+    
 
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
 
 
     }
@@ -26,16 +27,9 @@ public class CamChange : MonoBehaviour {
     {
         if (other.gameObject.tag == "camswitch")
         {
-            camleft.enabled = true;
-            camright.enabled = false;
+            camleft.enabled = false;
+            camright.enabled = true;
 
         }
     }
 }
-
-    
-     
-            
-   
-    
-
