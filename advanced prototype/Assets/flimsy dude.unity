@@ -4920,14 +4920,14 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 66
+  field of view: 41
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -5113,7 +5113,7 @@ Transform:
   m_GameObject: {fileID: 1877762348}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.82, y: 24.4, z: -0.1}
-  m_LocalScale: {x: 64.91813, y: 0.2380224, z: 48.86301}
+  m_LocalScale: {x: 64.91813, y: 0.2380224, z: 55.767365}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
