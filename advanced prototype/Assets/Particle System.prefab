@@ -2656,12 +2656,13 @@ ParticleSystem:
     radiusScale: 1
   SubModule:
     serializedVersion: 2
-    enabled: 0
+    enabled: 1
     subEmitters:
     - serializedVersion: 2
-      emitter: {fileID: 0}
-      type: 0
-      properties: 0
+      emitter: {fileID: 198589049420263086, guid: 7c98b7cec76a3314cb8a4ffffd04d4a9,
+        type: 2}
+      type: 2
+      properties: -1
   LightsModule:
     enabled: 1
     ratio: 1
